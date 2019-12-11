@@ -2,7 +2,6 @@ import socket
 def crearServer(port):
     server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     host = socket.gethostname()
-
     server.bind((host, int(port)))
     print('Conectado a: ' + host + ", PORT : " + str(port))
     return server
