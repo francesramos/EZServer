@@ -1,0 +1,7 @@
+crear { server1 : 12345 }
+conn{ server1 : conn1 }
+print { RECEIVE { conn1 } }
+x := "Hola mundo cruel!"
+env { conn1 : x }
+cerrar { conn1 }
+
