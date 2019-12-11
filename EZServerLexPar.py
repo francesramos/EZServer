@@ -193,8 +193,8 @@ class EZ_Parser(Parser):
 
     @_('ID "." ID')
     def filename(self, p):
-        if p.ID1 != "sbl":
-            raise Exception('File must be in SBL+ format.')
+        if p.ID1 != "ez":
+            raise Exception('File must be in EZ format.')
         else:
             return p.ID0 + "." + p.ID1
 
